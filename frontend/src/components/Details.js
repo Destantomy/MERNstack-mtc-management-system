@@ -20,7 +20,7 @@ const Details = () => {
   }, [])
 
   const getDetails = async () => {
-    let result = await fetch('http://localhost:8080/api/datalog/' + id)
+    let result = await fetch('/api/datalog/' + id)
     result = await result.json()
     setName(result.name)
     setFacility(result.facility)
