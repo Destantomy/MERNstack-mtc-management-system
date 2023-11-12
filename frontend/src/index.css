@@ -170,7 +170,6 @@ nav {
 }
 
 section#box-profile {
-  position: relative;
   width: 80%;
   min-height: 250px;
   margin-left: 10%;
@@ -182,7 +181,7 @@ section#box-profile {
   background-color: #fff;
 }
 #box-profile .img-profile {
-  position: relative;
+  margin-top: 20px;
   display: inline-block;
   width: 200px;
   height: 200px;
