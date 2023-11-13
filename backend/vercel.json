@@ -1,20 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "sources/**/*.js",
-      "use": "@now/node"
-    }
+    { "src": "/sources/server.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "/sources/(.*)",
-      "dest": "sources/routes/routes.ts",
-      "methods": ["GET", "POST", "PUT", "DELETE"]
-    },
-    {
-      "src": "/(.*)",
-      "dest": "sources/server.js"
-    }
+    { "src": "/sources/(.*)", "dest": "/sources/routes" }
   ]
 }
