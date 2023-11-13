@@ -8,7 +8,6 @@
   ],
   "routes": [
     { "src": "/api/datalog/(.*)", "dest": "sources/routes/routes.js" },
-    { "src": "/", "dest": "sources/server.js" },
     { "src": "/(.*)", "dest": "sources/server.js" }
   ]
 }
