@@ -20,7 +20,7 @@ const Details = () => {
   }, [])
 
   const getDetails = async () => {
-    let result = await fetch('/api/datalog/' + id)
+    let result = await fetch('https://render-n9d6ws703-destas-projects.vercel.app/api/datalog/' + id)
     result = await result.json()
     setName(result.name)
     setFacility(result.facility)
@@ -55,7 +55,7 @@ const Details = () => {
   } 
 
   const remover = async () => {
-    const response = await fetch('/api/datalog/' + id, {
+    const response = await fetch('https://render-n9d6ws703-destas-projects.vercel.app/api/datalog/' + id, {
       method: 'DELETE'
     })
     // const json = await response.json()

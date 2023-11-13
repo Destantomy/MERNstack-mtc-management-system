@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 // routes
-app.use('/api/datalog', routers);
+app.use('/api/datalog/', routers);
 
 // connect to mongodb
 connectDB();
