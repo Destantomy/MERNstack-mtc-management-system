@@ -20,7 +20,7 @@ const Details = () => {
   }, [])
 
   const getDetails = async () => {
-    let result = await fetch('https://render-c1agcvp79-destas-projects.vercel.app/api/datalog/' + id)
+    // let result = await fetch('https://render-j4jc4hh60-destas-projects.vercel.app/api/datalog/' + id)
     result = await result.json()
     setName(result.name)
     setFacility(result.facility)
