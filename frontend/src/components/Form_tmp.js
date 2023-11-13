@@ -20,7 +20,7 @@ const Form_tmp = () => {
       e.preventDefault()
       setPending(true)
       const datalog = {name, facility, issue, status}
-      const response = await fetch('https://render.vercel.app/api/datalog/', {
+      const response = await fetch('/api/datalog/', {
         method: 'POST',
         body: JSON.stringify(datalog),
         headers: {
@@ -53,7 +53,7 @@ const Form_tmp = () => {
 
     useEffect(() => {
     const fetch_data = async () => {
-      const response = await fetch('https://render.vercel.app/api/datalog/')
+      const response = await fetch('/api/datalog/')
       const json = await response.json()
       if (response.ok) {
         dispatch({type: 'set_datalog', payload: json})

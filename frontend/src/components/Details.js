@@ -20,7 +20,7 @@ const Details = () => {
   }, [])
 
   const getDetails = async () => {
-    let result = await fetch('https://render.vercel.app/api/datalog/' + id)
+    let result = await fetch('/api/datalog/' + id)
     result = await result.json()
     setName(result.name)
     setFacility(result.facility)
@@ -32,7 +32,7 @@ const Details = () => {
     e.preventDefault()
       setPending(true)
       const datalog = {name, facility, issue, status}
-      const response = await fetch('https://render.vercel.app/api/datalog/' + id, {
+      const response = await fetch('/api/datalog/' + id, {
         method: 'PUT',
         body: JSON.stringify(datalog),
         headers: {
@@ -55,7 +55,7 @@ const Details = () => {
   } 
 
   const remover = async () => {
-    const response = await fetch('https://render.vercel.app/api/datalog/' + id, {
+    const response = await fetch('/api/datalog/' + id, {
       method: 'DELETE'
     })
     // const json = await response.json()
