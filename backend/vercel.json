@@ -10,7 +10,7 @@
   ],
   "routes": [
     { "src": "/api/datalog/:id", "dest": "sources/routes/routes.js" },
-    { "src": "/api/datalog/(.*)", "dest": "sources/routes/routes.js" },
+    { "src": "/api/datalog", "dest": "sources/routes/routes.js" },
     { "src": "/(.*)", "dest": "sources/server.js" }
   ]
 }

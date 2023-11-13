@@ -13,15 +13,15 @@ const {
 router.get('/', getData);
 
 // get a data by_id
-router.get('/:id', getDataById);
+router.get('/:id?', getDataById);
 
 // post a new data
 router.post('/', createData);
 
 // update a data
-router.put('/:id', updateDataById);
+router.put('/:id?', updateDataById);
 
 // delete a data
-router.delete('/:id', deleteDataById);
+router.delete('/:id?', deleteDataById);
 
 module.exports = router;
