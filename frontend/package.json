@@ -1,5 +1,5 @@
 {
-  "proxy": "https://render.vercel.app",
+  "proxy": "https://render-mtc-backend.vercel.app",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
