@@ -20,7 +20,7 @@ const Form_tmp = () => {
       e.preventDefault()
       setPending(true)
       const datalog = {name, facility, issue, status}
-      const response = await fetch('https://render-c1agcvp79-destas-projects.vercel.app/api/datalog', {
+      const response = await fetch('https://render-8iurfpx8a-destas-projects.vercel.app/api/datalog/', {
         method: 'POST',
         body: JSON.stringify(datalog),
         headers: {
