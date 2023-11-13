@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "sources/**/*.js",
-      "use": "@now/node-server"
+      "use": "@now/node"
     }
   ],
   "routes": [
