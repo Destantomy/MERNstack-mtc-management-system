@@ -4,8 +4,8 @@ require('dotenv').config();
 const routers = require('./routes/routes');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://render-i1tx.vercel.app/',
-  methods: 'GET,PUT,POST,DELETE',
+  origin: 'https://render-i1tx.vercel.app/api/datalog/',
+  methods: 'GET, PUT, POST, DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
 };
