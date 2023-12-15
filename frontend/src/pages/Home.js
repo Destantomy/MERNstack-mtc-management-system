@@ -4,7 +4,7 @@ import useFetch from '../handling/useFetch'
 import Spinner from '../../node_modules/react-bootstrap/Spinner'
 
 const Home = () => {
-  const { error, isPending, datalog } = useFetch('https://render-mtc-backend.vercel.app/api/datalog/')
+  const { error, isPending, datalog } = useFetch('https://mer-nstack-mtc-management-system.vercel.app/api/datalog/')
   // console.log(datalog)
 
   return (
