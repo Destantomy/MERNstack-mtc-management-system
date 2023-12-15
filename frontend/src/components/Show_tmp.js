@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
+import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 const Show_tmp = ({datalog}) => {
 
@@ -57,12 +58,12 @@ const Show_tmp = ({datalog}) => {
                 <tr>
                   <td>Created at</td>
                   <td>:</td>
-                  <td>{data.createdAt}</td>
+                  <td>{formatDistanceToNow(new Date(data.createdAt), { addSuffix: true })}</td>
                 </tr>
                 <tr>
                   <td>Updated at</td>
                   <td>:</td>
-                  <td>{data.updatedAt}</td>
+                  <td>{formatDistanceToNow(new Date(data.updatedAt), { addSuffix: true })}</td>
                 </tr>
               </Link>
               </table>
